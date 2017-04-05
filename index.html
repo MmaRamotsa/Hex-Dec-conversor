@@ -28,13 +28,13 @@ Evaluación del módulo MF0951_2.
   	<div class="row">
     		<div class="form-group">
         	<label for="datohex">Dato hexadecimal</label>
-        	<input type="text" class="form-control" id="datohex" placeholder="Valor en hexadecimal" required>
+        	<input type="text" maxlength="16" class="form-control" id="datohex" placeholder="Valor en hexadecimal" tabindex="1" required>
     		</div>
     		<div class="form-group" id="convers">
         		<span>Decimal</span>
         		<div class="form-control" id="datodec"></div>
     		</div>
-    		<button class="btn btn-primary" id="enviar" disabled>Enviar</button>
+    		<button class="btn btn-primary" id="enviar" tabindex="2">Enviar</button>
 		</div>
 		<div class="row">
 			<div class="col-lg-offset-4 col-lg-4 col-xs-12">
@@ -46,7 +46,7 @@ Evaluación del módulo MF0951_2.
 				<div class="alert alert-success" role="alert" id="msgexito">
 					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
   				<span class="sr-only">Bien hecho!</span>
-  				¡Bien hecho! Haz click en <span class="primary"> Enviar </span> para convertirlo a decimal.
+  				¡Bien hecho!
 				</div>
 			</div>
 		</div>
