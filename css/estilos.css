@@ -1,0 +1,42 @@
+/*======================================================================
+Página creada por : Maria Antonia Martínez García
+Fecha: 04/04/2017
+Versión : v1.0
+Evaluación del módulo MF0951_2.
+==========================================================================*/
+/*Para que el pie de página se quede fijo en la parte inferior de la página*/
+footer{
+	position:fixed;
+  left:0px;
+  bottom:0px;
+	height: 50px;
+	width: 100%;
+	text-align: right;
+	background-color: #f5f5f5;
+}
+span{
+	font-weight: bold;
+}
+img{
+	margin: 10px;
+	border:0;
+	width:88px;
+	height:31px;
+}
+.alert{
+	visibility:hidden;
+}
+.grande{
+	font-size: 2em;
+	text-align: center;
+	visibility: visible;
+}
+#convers{
+	display: none;
+}
+#datodec{
+	border: 1px solid #eee;
+	border-radius: 5px;
+	background-color: #eee;
+	color: #337ab7;
+}

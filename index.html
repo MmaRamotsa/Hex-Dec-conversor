@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--======================================================================
+Página creada por : Maria Antonia Martínez García
+Fecha: 04/04/2017
+Versión : v1.0
+Evaluación del módulo MF0951_2.
+==========================================================================-->
+<head>
+	<meta charset="UTF-8">
+	<title>Módulo formativo MF0951_2</title>
+	<meta name="author" content="MAMG">
+	<meta name="keywords" content="HTML5,JavaScript,lenguajes de guión,bootstrap,validación,hexadecimal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Comprueba el dato hexadecimal</h1>
+      <p>Este es un formulario para comprobar si el dato que introduce el usuario es un valor hexadecimal.</p>
+    </div>
+  </div>
+  <div class="container">
+  	<div class="row">
+    		<div class="form-group">
+        	<label for="datohex">Dato hexadecimal</label>
+        	<input type="text" class="form-control" id="datohex" placeholder="Valor en hexadecimal" required>
+    		</div>
+    		<div class="form-group" id="convers">
+        		<span>Decimal</span>
+        		<div class="form-control" id="datodec"></div>
+    		</div>
+    		<button class="btn btn-primary" id="enviar" disabled>Enviar</button>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-4 col-lg-4 col-xs-12">
+				<div class="alert alert-danger" role="alert" id="msgerror">
+  				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+  				<span class="sr-only">Error:</span>
+  				ERROR: Por favor, introduce un número hexadecimal válido.
+				</div>
+				<div class="alert alert-success" role="alert" id="msgexito">
+					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+  				<span class="sr-only">Bien hecho!</span>
+  				¡Bien hecho! Haz click en <span class="primary"> Enviar </span> para convertirlo a decimal.
+				</div>
+			</div>
+		</div>
+	</div>
+  <!-- Pie de página fijo -->
+  <footer class="footer">
+    <div class="container">
+      <p><a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!"></a>
+      <img alt="¡HTML5 Válido!" title="" src="img/w3chtml5.png"></p>
+    </div>
+  </footer>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Mi código de validación -->
+	<script src="js/codigo.js"></script>
+</body>
+</html>
